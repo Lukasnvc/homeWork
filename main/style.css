@@ -4,14 +4,10 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 
-@media screen and (max-width: 640px) {
-  .products h2 {
-    color: red;
-  }
-  .products h2 .items .item {
-    flex: 0 0 43;
-  }
+.main-container {
+  width: 100%;
 }
+
 header .promo {
   background-color: #000000;
   color: white;
@@ -20,11 +16,42 @@ header .promo {
   padding: 11px;
   text-align: center;
 }
+header .mobileNav {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d6ff37;
+}
+@media screen and (max-width: 640px) {
+  header .mobileNav {
+    display: flex;
+  }
+}
+header .mobileNav a {
+  text-decoration: none;
+  color: #000000;
+}
+header .mobileNav a h2 {
+  padding: 20px;
+  font-size: 1.8rem;
+}
+header .mobileNav .icons {
+  display: flex;
+}
+header .mobileNav .icons i {
+  padding-right: 20px;
+  font-size: 2rem;
+}
 header nav {
   width: 100%;
   display: flex;
   min-width: 1030px;
   border: 1px solid black;
+}
+@media screen and (max-width: 640px) {
+  header nav {
+    display: none;
+  }
 }
 header nav .logo {
   background-color: #d6ff37;
@@ -95,9 +122,15 @@ main .top .text p {
 main .top .selections {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100vw;
   height: 41vh;
   min-width: 1030px;
+}
+@media screen and (max-width: 640px) {
+  main .top .selections {
+    display: none;
+  }
 }
 main .top .selections .container1 {
   background-image: url("../images/Mergina.webp");
@@ -133,24 +166,23 @@ main .top .selections .container3:hover {
   opacity: 0.6;
   cursor: pointer;
 }
-
-.products {
+main .products {
   width: 90%;
   margin: auto;
 }
-.products h2 {
+main .products h2 {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 20px;
   font-size: 2.5rem;
 }
-.products .items {
+main .products .items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
 }
-.products .items .item {
+main .products .items .item {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -158,36 +190,40 @@ main .top .selections .container3:hover {
   margin: 30px 0;
   transition: all 0.6s;
 }
-.products .items .item:hover {
+@media screen and (max-width: 640px) {
+  main .products .items .item {
+    flex: 0 0 40%;
+  }
+}
+main .products .items .item:hover {
   opacity: 0.6;
   cursor: pointer;
 }
-.products .items .item .image {
+main .products .items .item .image {
   position: relative;
 }
-.products .items .item .image img {
+main .products .items .item .image img {
   width: 100%;
 }
-.products .items .item .image .bestSeller {
+main .products .items .item .image .bestSeller {
   position: absolute;
   background-color: #000000;
   color: #d6ff37;
   font-size: 1rem;
   padding: 2px 10px;
 }
-.products .items .item p {
+main .products .items .item p {
   padding: 5px;
   margin-left: 20px;
   font-size: 1.2rem;
 }
-
-.bottom {
+main .bottom {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.bottom button {
+main .bottom button {
   border: none;
   font-size: 1.2rem;
   padding: 10px 50px;
@@ -197,54 +233,102 @@ main .top .selections .container3:hover {
   margin: 40px 0;
   transition: all 0.6s;
 }
-.bottom button:hover {
+main .bottom button:hover {
   background-color: #d6ff37;
   cursor: pointer;
   color: black;
 }
-.bottom .sale {
+main .bottom .sale {
   display: flex;
   width: 100%;
 }
-.bottom .sale .sidepic {
+@media screen and (max-width: 640px) {
+  main .bottom .sale {
+    display: flex;
+    flex-direction: column;
+  }
+}
+main .bottom .sale .sidepic {
   background-image: url("../images/side-photo.jpeg");
   background-size: cover;
   background-position: top;
   width: 40%;
+  flex: 0 0 4;
 }
-.bottom .sale .gradient {
+@media screen and (max-width: 640px) {
+  main .bottom .sale .sidepic {
+    width: 100%;
+    height: 50vh;
+    flex: 0 0 1;
+  }
+}
+main .bottom .sale .gradient {
+  flex: 0 0 6;
   width: 60%;
   height: 70vh;
   background: linear-gradient(to top, #bee14c, #fdfff5);
   position: relative;
 }
-.bottom .sale .gradient .text {
+@media screen and (max-width: 640px) {
+  main .bottom .sale .gradient {
+    width: 100%;
+    height: 50vh;
+    flex: 0 0 1;
+  }
+}
+main .bottom .sale .gradient .text {
   position: absolute;
-  left: 30%;
+  left: 25%;
   top: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
-.bottom .sale .gradient .text span {
+@media screen and (max-width: 640px) {
+  main .bottom .sale .gradient .text {
+    top: 15%;
+    left: 10%;
+  }
+}
+main .bottom .sale .gradient .text span {
   font-size: 1.5rem;
 }
-.bottom .sale .gradient .text h2 {
-  font-size: 7rem;
+main .bottom .sale .gradient .text h2 {
+  font-size: 6rem;
 }
-.bottom .sale .gradient .text .fa-sharp {
+@media screen and (max-width: 640px) {
+  main .bottom .sale .gradient .text h2 {
+    font-size: 5rem;
+  }
+}
+main .bottom .sale .gradient .text .fa-sharp {
   font-size: 2.5rem;
 }
-.bottom .firstOrder {
-  display: block;
-  font-size: 2.5rem;
-  text-decoration: underline;
+main .bottom .firstOrder {
   text-align: center;
   margin: 40px 0;
 }
-.bottom .firstOrder i {
+main .bottom .firstOrder h2 {
+  display: inline;
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+@media screen and (max-width: 640px) {
+  main .bottom .firstOrder h2 {
+    font-size: 1.2rem;
+  }
+}
+main .bottom .firstOrder i {
   margin: 0 50px;
   font-size: 3rem;
+}
+@media screen and (max-width: 640px) {
+  main .bottom .firstOrder i {
+    display: block;
+    transform: rotate(90deg);
+    margin: 20px 0;
+  }
 }
 
 footer {
@@ -254,6 +338,11 @@ footer .first {
   display: flex;
   width: 100%;
   line-height: 2;
+}
+@media screen and (max-width: 640px) {
+  footer .first {
+    flex-direction: column;
+  }
 }
 footer .first .black {
   background-color: #000000;
@@ -265,22 +354,51 @@ footer .first .black {
   justify-content: center;
   flex: 3;
 }
-footer .first .clmn {
-  text-align: left;
-  padding: 80px;
-  font-size: 0.9rem;
+@media screen and (max-width: 640px) {
+  footer .first .black {
+    align-items: start;
+    width: 100%;
+    align-items: left;
+    padding: 20px 0;
+  }
+  footer .first .black h2, footer .first .black p {
+    padding-left: 20px;
+  }
 }
-footer .first .clmn span {
-  font-size: 1.3rem;
-}
-footer .first .right {
+footer .right {
   width: 100%;
   display: flex;
   justify-content: center;
   flex: 7;
 }
+@media screen and (max-width: 640px) {
+  footer .right {
+    flex-direction: column;
+    align-items: start;
+    flex: 2;
+  }
+}
+footer .right .clmn {
+  text-align: left;
+  padding: 80px;
+  font-size: 0.9rem;
+}
+@media screen and (max-width: 640px) {
+  footer .right .clmn {
+    padding: 20px;
+    font-size: 1rem;
+  }
+}
+footer .right .clmn span {
+  font-size: 1.3rem;
+}
 footer .second {
   display: flex;
+}
+@media screen and (max-width: 640px) {
+  footer .second {
+    flex-direction: column;
+  }
 }
 footer .second .social {
   flex: 3;
