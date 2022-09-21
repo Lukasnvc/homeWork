@@ -18,14 +18,18 @@ header nav {
   min-width: 1030px;
   border: 1px solid black;
 }
-header nav .logo {
+header nav .home {
+  text-decoration: none;
+  color: #202f3c;
   background-color: #d6ff37;
+  border-right: 1px solid black;
+  flex: 0.8;
+}
+header nav .logo {
   font-size: 1.7rem;
   font-weight: 700;
   padding: 10px;
   text-align: center;
-  flex: 0.8;
-  border-right: 1px solid black;
 }
 header nav .empty {
   flex: 3;
@@ -65,65 +69,17 @@ header nav ul li:hover {
   cursor: pointer;
 }
 
-main .top .text {
+main .top .label {
+  background: linear-gradient(to top, #bee14c, #fdfff5);
+  height: 255px;
+  margin-top: 0;
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0 auto;
-  margin-bottom: 4rem;
+  align-items: center;
+  justify-content: center;
 }
-main .top .text h1 {
+main .top .label h1 {
   font-size: 5rem;
   margin-top: 20px;
-}
-main .top .text p {
-  background-color: #d6ff37;
-  font-size: 1.5rem;
-  padding: 0.2rem 3rem;
-}
-main .top .selections {
-  display: flex;
-  justify-content: space-between;
-  width: 100vw;
-  height: 41vh;
-  min-width: 1030px;
-}
-main .top .selections .container1 {
-  background-image: url("../images/Mergina.webp");
-  background-size: cover;
-  background-position: center;
-  flex: 0 0 20%;
-  transition: all 0.6s;
-}
-main .top .selections .container1:hover {
-  opacity: 0.6;
-  cursor: pointer;
-}
-main .top .selections .container2 {
-  background-image: url("../images/center.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  flex: 0 0 57%;
-  transition: all 0.6s;
-}
-main .top .selections .container2:hover {
-  opacity: 0.6;
-  cursor: pointer;
-}
-main .top .selections .container3 {
-  background-image: url("../images/Vyrukas.webp");
-  background-size: cover;
-  background-position: center;
-  flex: 0 0 22%;
-  transition: all 0.6s;
-}
-main .top .selections .container3:hover {
-  opacity: 0.6;
-  cursor: pointer;
 }
 
 .products {
@@ -161,69 +117,6 @@ main .top .selections .container3:hover {
   padding: 5px;
   margin-left: 20px;
   font-size: 1.2rem;
-}
-
-.bottom {
-  width: 100%;
-}
-.bottom button {
-  border: none;
-  font-size: 1.1rem;
-  padding: 10px 50px;
-  background-color: #000000;
-  border: 2px solid black;
-  color: #d6ff37;
-  margin: 40px 45%;
-  transition: all 0.6s;
-}
-.bottom button:hover {
-  background-color: #d6ff37;
-  cursor: pointer;
-  color: black;
-}
-.bottom .sale {
-  display: flex;
-  width: 100%;
-}
-.bottom .sale .sidepic {
-  background-image: url("../images/side-photo.jpeg");
-  background-size: cover;
-  background-position: top;
-  width: 40%;
-}
-.bottom .sale .gradient {
-  width: 60%;
-  height: 70vh;
-  background: linear-gradient(to top, #bee14c, #fdfff5);
-  position: relative;
-}
-.bottom .sale .gradient .text {
-  position: absolute;
-  left: 30%;
-  top: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.bottom .sale .gradient .text span {
-  font-size: 1.5rem;
-}
-.bottom .sale .gradient .text h2 {
-  font-size: 7rem;
-}
-.bottom .sale .gradient .text .fa-sharp {
-  font-size: 2.5rem;
-}
-.bottom .firstOrder {
-  display: block;
-  font-size: 2.5rem;
-  text-decoration: underline;
-  text-align: center;
-  margin: 40px 0;
-}
-.bottom .firstOrder i {
-  margin: 0 50px;
-  font-size: 3rem;
 }
 
 footer {
