@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+header .promo {
+  background-color: #000000;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 11px;
+  text-align: center;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  min-width: 1030px;
+  border: 1px solid black;
+}
+header nav .logo {
+  background-color: #d6ff37;
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding: 10px;
+  text-align: center;
+  flex: 0.8;
+  border-right: 1px solid black;
+}
+header nav .empty {
+  flex: 3;
+}
+header nav .cart {
+  flex: 1;
+  text-align: center;
+  align-self: center;
+  font-size: 1.2rem;
+}
+header nav .cart i {
+  padding: 0 10px;
+  font-size: 1.5rem;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  flex: 2;
+}
+header nav ul a {
+  text-decoration: none;
+  color: #202f3c;
+  flex: 2;
+}
+header nav ul li {
+  color: #202f3c;
+  flex: 2;
+  padding: 20px 0;
+  border-right: 1px solid black;
+  text-align: center;
+  font-size: 1.2rem;
+  transition: all 0.6s;
+}
+header nav ul li:hover {
+  background-color: #000000;
+  color: #d6ff37;
+  cursor: pointer;
+}
+
+main .top .text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+main .top .text h1 {
+  font-size: 5rem;
+  margin-top: 20px;
+}
+main .top .text p {
+  background-color: #d6ff37;
+  font-size: 1.5rem;
+  padding: 0.2rem 3rem;
+}
+main .top .selections {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 41vh;
+  min-width: 1030px;
+}
+main .top .selections .container1 {
+  background-image: url("../images/Mergina.webp");
+  background-size: cover;
+  background-position: center;
+  flex: 0 0 20%;
+  transition: all 0.6s;
+}
+main .top .selections .container1:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+main .top .selections .container2 {
+  background-image: url("../images/center.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 0 0 57%;
+  transition: all 0.6s;
+}
+main .top .selections .container2:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+main .top .selections .container3 {
+  background-image: url("../images/Vyrukas.webp");
+  background-size: cover;
+  background-position: center;
+  flex: 0 0 22%;
+  transition: all 0.6s;
+}
+main .top .selections .container3:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.products {
+  width: 90%;
+  margin: auto;
+}
+.products h2 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+.products .items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.products .items .item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 0 0 23%;
+  margin: 30px 0;
+  transition: all 0.6s;
+}
+.products .items .item:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.products .items .item img {
+  width: 100%;
+}
+.products .items .item p {
+  padding: 5px;
+  margin-left: 20px;
+  font-size: 1.2rem;
+}
+
+.bottom {
+  width: 100%;
+}
+.bottom button {
+  border: none;
+  font-size: 1.1rem;
+  padding: 10px 50px;
+  background-color: #000000;
+  border: 2px solid black;
+  color: #d6ff37;
+  margin: 40px 45%;
+  transition: all 0.6s;
+}
+.bottom button:hover {
+  background-color: #d6ff37;
+  cursor: pointer;
+  color: black;
+}
+.bottom .sale {
+  display: flex;
+  width: 100%;
+}
+.bottom .sale .sidepic {
+  background-image: url("../images/side-photo.jpeg");
+  background-size: cover;
+  background-position: top;
+  width: 40%;
+}
+.bottom .sale .gradient {
+  width: 60%;
+  height: 70vh;
+  background: linear-gradient(to top, #bee14c, #fdfff5);
+  position: relative;
+}
+.bottom .sale .gradient .text {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bottom .sale .gradient .text span {
+  font-size: 1.5rem;
+}
+.bottom .sale .gradient .text h2 {
+  font-size: 7rem;
+}
+.bottom .sale .gradient .text .fa-sharp {
+  font-size: 2.5rem;
+}
+.bottom .firstOrder {
+  display: block;
+  font-size: 2.5rem;
+  text-decoration: underline;
+  text-align: center;
+  margin: 40px 0;
+}
+.bottom .firstOrder i {
+  margin: 0 50px;
+  font-size: 3rem;
+}
+
+footer .first {
+  display: flex;
+  width: 100%;
+  line-height: 2;
+}
+footer .first .black {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 3;
+}
+footer .first .clmn {
+  text-align: left;
+  padding: 80px;
+  font-size: 0.9rem;
+}
+footer .first .clmn span {
+  font-size: 1.3rem;
+}
+footer .first .right {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex: 7;
+}
+footer .second {
+  display: flex;
+}
+footer .second .social {
+  flex: 3;
+  text-align: center;
+  font-size: 1.3rem;
+}
+footer .second .social i {
+  padding: 20px 10px;
+}
+footer .second .social i:hover {
+  color: #d6ff37;
+  cursor: pointer;
+}
+footer .second .copyRight {
+  flex: 7;
+  text-align: center;
+  border: 1px solid black;
+  background-color: #d6ff37;
+}
+footer .second .copyRight p {
+  padding: 20px 0;
+}
+
+@media screen and (min-width: 480px) {
+  nav {
+    display: none;
+  }
+  nav ul {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
