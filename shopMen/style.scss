@@ -139,8 +139,20 @@ main {
           cursor: pointer;
         }
 
-        img {
-          width: 100%;
+        .image {
+          position: relative;
+
+          img {
+            width: 100%;
+          }
+
+          .bestSeller {
+            position: absolute;
+            background-color: #000000;
+            color: #d6ff37;
+            font-size: 1rem;
+            padding: 2px 10px;
+          }
         }
 
         p {
@@ -225,11 +237,23 @@ footer {
   }
 }
 
-@media screen and (min-width: 480px) {
-  nav{
-    display: none;
-    ul {
-      display: none;
+.chat {
+  background-color: #000000;
+  width: fit-content;
+  border-radius: 10px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  &:hover {
+    cursor: pointer;
+    i{
+      color: #d6ff37;
     }
-}
+  }
+
+  i {
+    color: white;
+    font-size: 2.5rem;
+    padding: 10px;
+  }
 }

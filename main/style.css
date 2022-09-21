@@ -4,6 +4,14 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 
+@media screen and (max-width: 640px) {
+  .products h2 {
+    color: red;
+  }
+  .products h2 .items .item {
+    flex: 0 0 43;
+  }
+}
 header .promo {
   background-color: #000000;
   color: white;
@@ -154,8 +162,18 @@ main .top .selections .container3:hover {
   opacity: 0.6;
   cursor: pointer;
 }
-.products .items .item img {
+.products .items .item .image {
+  position: relative;
+}
+.products .items .item .image img {
   width: 100%;
+}
+.products .items .item .image .bestSeller {
+  position: absolute;
+  background-color: #000000;
+  color: #d6ff37;
+  font-size: 1rem;
+  padding: 2px 10px;
 }
 .products .items .item p {
   padding: 5px;
@@ -165,15 +183,18 @@ main .top .selections .container3:hover {
 
 .bottom {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .bottom button {
   border: none;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   padding: 10px 50px;
   background-color: #000000;
   border: 2px solid black;
   color: #d6ff37;
-  margin: 40px 45%;
+  margin: 40px 0;
   transition: all 0.6s;
 }
 .bottom button:hover {
@@ -285,11 +306,24 @@ footer .second .copyRight p {
   padding: 20px 0;
 }
 
-@media screen and (min-width: 480px) {
-  nav {
-    display: none;
-  }
-  nav ul {
-    display: none;
-  }
+.chat {
+  background-color: #000000;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 10px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+.chat:hover {
+  cursor: pointer;
+}
+.chat:hover i {
+  color: #d6ff37;
+}
+.chat i {
+  color: white;
+  font-size: 2.5rem;
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
