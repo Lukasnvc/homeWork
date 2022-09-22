@@ -100,73 +100,109 @@ header nav ul li:hover {
   cursor: pointer;
 }
 
-main .top .label {
-  background: linear-gradient(to top, #bee14c, #fdfff5);
-  height: 255px;
-  margin-top: 0;
+main {
+  width: 90%;
+  margin: 30px auto;
+}
+main .top {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+}
+main .top p {
+  word-spacing: 0.3rem;
+  padding: 40px 0;
+}
+main .top p a {
+  text-decoration: none;
+  color: #000000;
+}
+main .top p span {
+  color: #b6b6b6;
+}
+main .product {
+  display: flex;
+  gap: 40px;
   justify-content: center;
 }
-main .top .label h1 {
-  font-size: 5rem;
-  margin-top: 20px;
-}
-
-.products {
-  width: 90%;
-  margin: auto;
-}
-.products h2 {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  font-size: 2.5rem;
-}
-.products .items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 100%;
-}
-.products .items a {
-  text-decoration: none;
-  color: black;
-  flex: 0 0 23%;
-}
 @media screen and (max-width: 640px) {
-  .products .items a {
-    flex: 0 0 40%;
+  main .product {
+    flex-direction: column;
+    align-items: center;
   }
 }
-.products .items a .item {
+main .product .picture {
+  margin: 20px 0;
+  width: 500px;
+}
+@media screen and (max-width: 640px) {
+  main .product .picture {
+    width: 100%;
+  }
+}
+main .product .picture img {
+  border: 1px solid black;
+  width: 100%;
+}
+@media screen and (max-width: 640px) {
+  main .product .picture img {
+    border: none;
+  }
+}
+main .product .picture p {
+  margin: 40px 0;
+  line-height: 1.5rem;
+}
+@media screen and (max-width: 640px) {
+  main .product .picture p {
+    display: none;
+  }
+}
+main .product .description {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  margin: 30px 0;
-  transition: all 0.6s;
+  width: 355px;
+  margin: 20px 0;
 }
-.products .items a .item:hover {
-  opacity: 0.6;
-  cursor: pointer;
+main .product .description h2 {
+  font-size: 2.5rem;
 }
-.products .items a .item .image {
-  position: relative;
+main .product .description span {
+  font-size: 0.9rem;
 }
-.products .items a .item .image img {
-  width: 100%;
+main .product .description .price {
+  font-size: 1.3rem;
+  margin: 15px 0;
+  color: #5a5a5a;
 }
-.products .items a .item .image .bestSeller {
-  position: absolute;
+main .product .description .quantity {
+  font-size: 1.2rem;
+  width: 50px;
+  padding: 10px 20px 10px 10px;
+  border: 1px solid #b5b3b3;
+  margin: 10px 0;
+}
+main .product .description button {
   background-color: #000000;
   color: #d6ff37;
-  font-size: 1rem;
-  padding: 2px 10px;
-}
-.products .items a .item p {
-  padding: 5px;
-  margin-left: 20px;
   font-size: 1.2rem;
+  padding: 10px;
+  border: none;
+  margin: 20px 0;
+}
+main .product .description h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+main .product .description p {
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+main .product .description .policy {
+  padding: 20px 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 footer {
@@ -282,4 +318,4 @@ footer .second .copyRight p {
   color: white;
   font-size: 2.5rem;
   padding: 10px;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=styles.css.map */
