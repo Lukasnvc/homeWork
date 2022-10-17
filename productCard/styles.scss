@@ -14,14 +14,21 @@ header {
     font-size: 16px;
     padding: 11px;
     text-align: center;
+
+    @media screen and (max-width: 640px) {
+      display: none;
+      }
   }
 
   .mobileNav {
     display: none;
     justify-content: space-between;
     align-items: center;
-    background-color: #d6ff37;
-
+    background-color: rgba(214,255,55, 90%);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
     @media screen and (max-width: 640px) {
     display: flex;
     }
@@ -46,6 +53,36 @@ header {
         }
       }
     }
+
+  .mobileNavBar {
+      display: flex;
+      flex-direction: column;
+      width: 150px;
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      z-index: 99;
+      right: -150px;
+      top: 76px;
+      border-bottom-left-radius: 5%;
+      transition: all 0.5s;
+  
+      ul {
+        list-style: none;
+        padding: 20px;
+        
+        li {
+          font-size: 2rem;
+          font-weight: 600;
+          padding: 10px 0;
+          
+
+          a {
+            text-decoration: none;
+            color: #d6ff37;
+          }
+        }
+      }
+  }
 
   nav {
     width: 100%;

@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/b423b1131d.js" crossorigin="anonymous"></script>
+  <script defer src="/javaScript.js"></script>
 </head>
 <body>
   <div class="main-container">
@@ -21,8 +22,16 @@
         <a href="../main/index.html"><h2>T SHOP</h2></a>
         <div class="icons">
           <i class="fa-solid fa-basket-shopping"></i>
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars" id="mobileNavBtn"></i>
         </div>
+      </div>
+      <div class="mobileNavBar" id="hiddenMobileNav">
+        <ul>
+          <li><a href="../shopNew/shopNew.html">New</a></li>
+          <li><a href="../shopWomen/shopWomen.html">Women</a></li>
+          <li><a href="../../shopMen/shopMen.html">Men</a></li>
+          <li>Login</li>
+        </ul>
       </div>
       <nav>
         <a class="home" href="../main/index.html"><div class="logo">T SHOP</div></a>
